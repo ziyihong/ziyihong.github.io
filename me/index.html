@@ -5,14 +5,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing: border-box;
-  
-}
+
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #FFD700;
+  background-color: #363636;
+  margin: 40px;
 }
 
 /* Style the header */
@@ -27,30 +25,108 @@ header {
 }
 .box1{
  position: absolute;
- left: 20px;
+ left: 40px;
 
 }
 .box2{
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 40px;
+  top: 50px;
   
 }
 
+
+.centered-wrap{
+  position: relative;
+  left: 30%;
+  
+}
+
+.card-wrap{
+  width:200px;
+  height:280px;
+  position:relative;
+}
+
+.card{
+  position: relative;
+  left: 20px;
+  bottom:50px;
+  width:100%;
+  height:100%;
+  /*preserve the back when fliping*/
+  transform-style:preserve-3d;
+  transition:0.5s all ease;
+  /*box-shadow:0px 0px 10px rgba(10,10,0.8);*/
+}
+
+/*front card*/
+.card-front{
+  border-radius:20px;
+  position:absolute;
+  top:0mm;
+  background:#e8e8e8;
+  backface-visibility:hidden;
+  color:#333;
+  font-size:1.5rem;
+}
+
+.card-front span:nth-of-type(1){
+  display:block;
+  position:absolute;
+  top:5%;
+  left:5%;
+}
+
+.card-front img{
+  border-radius: 20px;
+  display:block;
+  position: relative;
+}
+
+.card-front span:nth-of-type(2){
+  display:block;
+  position:absolute;
+  right:5%;
+  bottom:5%;
+}
+
+/*back card*/
+.card-back{
+  border-radius:10px;
+  padding: 0;
+  position:fixed;
+  top: 0mm;
+  width:208px;
+  height:315px;
+  /*hide backface*/
+  backface-visibility:hidden;
+  color:#333;
+  font-size:1.5rem;
+  /*background:url("img/name.png");*/
+  /*flip card-back behind card-front*/
+  transform:rotateY(180deg);
+}
+.card:hover{
+  transform:rotateY(180deg);
+}
 .na{
-    background-color:#FFD700;
+    background-color:#333;
     right: 10px;
     padding: 20px;
 }
 .head{
-    background-color:white;
+    background-color:black;
     padding-left: 25px;
     padding-right: 25px;
+    color: white;
+    text-align: center;
+    
 }
 
-/* Container for flexboxes */
-section {
-  display: -webkit-flex;
+
+.container {
+  /*display: -webkit-flex;*/
   display: flex;
 }
 
@@ -58,23 +134,43 @@ section {
 nav {
   float: left;
   width: 30%;
+  text-align: center;
   background:#0066FF;
+  bottom: 40px;
   padding: 25px;
 }
 
 /* Style the content */
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
+aside{
+  float: right;
+  width: 70%;
   flex: 3;
-  background-color:#0066FF;
-  padding: 10px;
+  background-color:salmon;
+  padding:20px;
 }
-
+table{
+  padding-left: 0mm;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+td{
+  width: 220px;
+  height: 320px;
+}
+article{
+  background-color: salmon;
+  padding: 40px;
+}
+.box{
+  background-color: seashell;
+  padding: 20px;
+}
 /* Style the footer */
 footer {
   background-color:black;
   padding: 10px;
+  text-align: left;
   color: white;
 }
 
@@ -107,44 +203,114 @@ footer {
 
   </div>
   <div class="head">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-      <img src="img/banner.png" alt="banner" width="70px" height="60">
-     
-     
+    
+            <img src="img/banner.png" alt="banner" width="70px" height="60">
+            <img src="img/banner.png" alt="banner" width="70px" height="60">
+            <img src="img/banner.png" alt="banner" width="70px" height="60">
+        
+            <img src="img/bannerw.png" alt="banner" height="60">
+              <img src="img/banner.png" alt="banner" width="70px" height="60">
+              <img src="img/banner.png" alt="banner" width="70px" height="60">
+              <img src="img/banner.png" alt="banner" width="70px" height="60"> 
+    
+   
+       
   </div>
 </header>
-<section>
+<div class="container">
   <nav>
+       <br><br><br><br><br><br>
       <img src="img/jocker.png" alt="jocker" width="300" height="500">
+
   </nav>
   
-  <article>
-      <img src="img/pkb.png" alt="pkb" width="200" height="300">
-      <img src="img/pkb.png" alt="pkb" width="200" height="300">
-      <img src="img/pkb.png" alt="pkb" width="200" height="300">
-      <img src="img/pkb.png" alt="pkb" width="200" height="300">
-      <br>
-      <img src="img/pkb.png" alt="pkb" width="200" height="300">
-      <img src="img/pkb.png" alt="pkb" width="200" height="300">
-      <img src="img/pkb.png" alt="pkb" width="200" height="300">
-      <img src="img/pkb.png" alt="pkb" width="200" height="300">
-      
-      
-  </article>
-</section>
+  <aside>
+        <table>
+          <td>
+              <div class="centered-wrap">
+                  <div class="card-wrap">
+                    <div class="card">
+                      <div class="card-front">
+                        <img src="img/nameb.png" width="100%" height="100%">
+                          <div class="card-back"><img src="img/name.png"width="100%" height="100%" ></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </td>
+          <td>
+              <div class="centered-wrap">
+                  <div class="card-wrap">
+                    <div class="card">
+                      <div class="card-front">
+                        <img src="img/genderb.png" width="100%" height="100%">
+                          <div class="card-back"><img src="img/gender.png"width="100%" height="100%" ></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </td>
+          <td>
+              <div class="centered-wrap">
+                  <div class="card-wrap">
+                    <div class="card">
+                      <div class="card-front">
+                        <img src="img/bloodb.png" width="100%" height="100%">
+                          <div class="card-back"><img src="img/blood.png"width="100%" height="100%" ></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <div class="centered-wrap">
+                  <div class="card-wrap">
+                    <div class="card">
+                      <div class="card-front">
+                        <img src="img/interstingb.png" width="100%" height="100%">
+                          <div class="card-back"><img src="img/intersting.png"width="100%" height="100%" ></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </td>
+          <td>
+              <div class="centered-wrap">
+                  <div class="card-wrap">
+                    <div class="card">
+                      <div class="card-front">
+                        <img src="img/constellationb.png" width="100%" height="100%">
+                          <div class="card-back"><img src="img/constellation.png"width="100%" height="100%" ></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </td>
+          <td>
+              <div class="centered-wrap">
+                  <div class="card-wrap">
+                    <div class="card">
+                      <div class="card-front">
+                        <img src="img/birthdayb.png" width="100%" height="100%">
+                          <div class="card-back"><img src="img/birthday.png"width="100%" height="100%" ></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </td>
+        </tr>
+        </table>
+  </aside>
+</div>
+<article>
+     <div class="box">
+        <h1>社團經驗</h1>
+        <h2>高中時期:</h2>
+        <h3>高中的時候，因為聽了學校社團博覽會的介紹，參加了學校的"手工廚房社"，在社團中學長姐教我們做很多的蛋糕和餅乾，有時候也會學做一些鹹食，在高二的時候我也接了社團的幹部"美宣長"，我們會辦很多的活動讓學弟妹參加，這對回憶在我的高中生活占了很大的一部份。</h3>
+     </div>
+</article>
 
 <footer>
      <img src="img/information.png" alt="information" width="400px" height="200">
