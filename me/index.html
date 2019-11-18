@@ -4,12 +4,14 @@
 <title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 <style>
 
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #363636;
+  background-image: url("img/backg.png");
   margin: 40px;
 }
 
@@ -19,23 +21,72 @@ header {
   color: white;
 }
 .logo{
-  background-color:white;
+  background-image: url("img/desk.png");
   padding: 20px;
   text-align: center;
 }
+
+.na{
+    background-color:;
+    right: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    background-image: url("img/desk.png");
+}
+a{
+  color:black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+a:hover {
+color:black;
+font-size: 50px;
+
+}
+
+.head{
+    background-color:white;
+    border: 3px solid black;
+    text-align: center;
+    margin-top: 20px;
+    
+}
 .box1{
- position: absolute;
- left: 40px;
-
-}
-.box2{
-  position: absolute;
-  right: 40px;
-  top: 50px;
-  
+display: inline;
 }
 
 
+
+.container1{
+  /*display: -webkit-flex;*/
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  float: left;
+  width: 30%;
+  text-align: center;
+  background:rgba(187, 206, 235, 0.712);
+  bottom: 40px;
+  padding: 25px;
+  background-image: url("img/desk.png");
+  margin-top: 20px;
+}
+
+/* Style the content */
+aside{
+  float: right;
+  width: 70%;
+  flex: 3;
+  background-color:rgb(216, 208, 208);
+  padding:10px;
+  padding-left: 0%;
+  text-align: left;
+  background-image: url("img/desk.png");
+  margin-top: 20px;
+}
 .centered-wrap{
   position: relative;
   left: 30%;
@@ -110,44 +161,6 @@ header {
 .card:hover{
   transform:rotateY(180deg);
 }
-.na{
-    background-color:#333;
-    right: 10px;
-    padding: 20px;
-}
-.head{
-    background-color:black;
-    padding-left: 25px;
-    padding-right: 25px;
-    color: white;
-    text-align: center;
-    
-}
-
-
-.container {
-  /*display: -webkit-flex;*/
-  display: flex;
-}
-
-/* Style the navigation menu */
-nav {
-  float: left;
-  width: 30%;
-  text-align: center;
-  background:#0066FF;
-  bottom: 40px;
-  padding: 25px;
-}
-
-/* Style the content */
-aside{
-  float: right;
-  width: 70%;
-  flex: 3;
-  background-color:salmon;
-  padding:20px;
-}
 table{
   padding-left: 0mm;
   padding-right: 20px;
@@ -159,19 +172,31 @@ td{
   height: 320px;
 }
 article{
-  background-color: salmon;
-  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.788);
+  
+ 
 }
 .box{
   background-color: seashell;
   padding: 20px;
+  margin-top: 20px;
+}
+.imgbox{
+  background-color: seashell;
+  padding: 20px;
+  margin-top: 20px;
 }
 /* Style the footer */
 footer {
   background-color:black;
-  padding: 10px;
+  padding: 20px;
   text-align: left;
   color: white;
+}
+.box2{
+  display: inline;
+  padding: 40px;
+  text-align: center;
 }
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
@@ -186,45 +211,49 @@ footer {
 <body>
 <header>
   <div class="logo">
-      <div class="box1">
-          <img src="img/backgroundleft.png" alt="backgroundleft" width="100px" height="200">
-          <img src="img/back.png" alt="back" width="200" height="200">
-        </div>
-        <div>
-            <img src="img/logo.png" alt="my logo" width="450" height="180">
-          </div>
-        <div class="box2"> 
-            <img src="img/back.png" alt="back" width="200" height="200">
-            <img src="img/backgroundright.png" alt="backgroundright" width="100px" height="200">
-          </div>
+      <img src="img/banner.png" alt="banner" width="70px" height="60">
+      <img src="img/banner.png" alt="banner" width="70px" height="60">
+      <img src="img/banner.png" alt="banner" width="70px" height="60">
+  
+      <img src="img/bannerw.png" alt="banner" height="60">
+        <img src="img/banner.png" alt="banner" width="70px" height="60">
+        <img src="img/banner.png" alt="banner" width="70px" height="60">
+        <img src="img/banner.png" alt="banner" width="70px" height="60"> 
+     
         
   </div>
   <div class="na">
-
+      <a href="#0">個人自我介紹</a>
+      <a href="#1">社團經驗</a>
+      <a href="#2">學歷背景</a>
+      <a href="#3">目標</a>
+      <a href="#4">四年自我期許</a>
+      <a href="#5">my life</a>
   </div>
   <div class="head">
-    
-            <img src="img/banner.png" alt="banner" width="70px" height="60">
-            <img src="img/banner.png" alt="banner" width="70px" height="60">
-            <img src="img/banner.png" alt="banner" width="70px" height="60">
-        
-            <img src="img/bannerw.png" alt="banner" height="60">
-              <img src="img/banner.png" alt="banner" width="70px" height="60">
-              <img src="img/banner.png" alt="banner" width="70px" height="60">
-              <img src="img/banner.png" alt="banner" width="70px" height="60"> 
-    
-   
-       
+      <div class="box1">
+          <img src="img/backgroundleft.png" alt="backgroundleft" width="100px" height="180">
+          <img src="img/back.png" alt="back" width="200" height="180">
+            <img src="img/logo.png" alt="my logo" width="450" height="180">
+            <img src="img/back.png" alt="back" width="200" height="180">
+            <img src="img/backgroundright.png" alt="backgroundright" width="100px" height="170">
+      </div>
+         
   </div>
 </header>
-<div class="container">
+<div class="container1">
   <nav>
-       <br><br><br><br><br><br>
-      <img src="img/jocker.png" alt="jocker" width="300" height="500">
+       
+       <div id="0">
+          <br><br><br><br><br><br>
+          <img src="img/jocker.png" alt="jocker" width="380" height="500">
+       </div>
+      
 
   </nav>
   
   <aside>
+    <br><br><br>
         <table>
           <td>
               <div class="centered-wrap">
@@ -305,19 +334,57 @@ footer {
   </aside>
 </div>
 <article>
-     <div class="box">
-        <h1>社團經驗</h1>
-        <h2>高中時期:</h2>
-        <h3>高中的時候，因為聽了學校社團博覽會的介紹，參加了學校的"手工廚房社"，在社團中學長姐教我們做很多的蛋糕和餅乾，有時候也會學做一些鹹食，在高二的時候我也接了社團的幹部"美宣長"，我們會辦很多的活動讓學弟妹參加，這對回憶在我的高中生活占了很大的一部份。</h3>
-     </div>
+     
+       <div id="1">
+          <div class="box">
+          <h1>社團經驗</h1>
+          <h2>高中時期:</h2>
+          <h3>高中的時候，因為聽了學校社團博覽會的介紹，參加了學校的"手工廚房社"，在社團中學長姐教我們做很多的蛋糕和餅乾，有時候也會學做一些鹹食，在高二的時候我也接了社團的幹部"美宣長"，我們會辦很多的活動讓學弟妹參加，這對回憶在我的高中生活占了很大的一部份。</h3>
+          <h2>大學時期</h2>
+          <h3>在進大學後想學一個新才藝所以報名了吉他社，但後來發現自已根本沒時間練習，但還是期許自己可以在這四年把吉他學好</h3>
+       </div>
+      </div>
+      <div id="2">
+          <div class="box">
+            <h1>學歷背景</h1>
+            <img src="img/zlsh+cycu.png" alt="school" width="600" height="200">
+        </div>
+      </div>
+      <div id="3">
+          <div class="box">
+            <h1>目標</h1>
+            <h2>多益可以考到750分</h2><h4>如果可以更高當然更好</h4>
+            <h2>出國自助旅行一輪</h2><h4>還沒出國過好希望大學可以試試看</h4>
+            <h2>環台旅行</h2><h4>想要真正花一個時間好好地把台灣看過一遍</h4>
+            <h2>學習更多程式語言</h2><h4>都進資管系了還不好好利用資源</h4>
+            <h2>交更多朋友</h2><h4>擴展交友圈</h4>
+        </div>
+      </div>
+      <div id="4">
+          <div class="box">
+              <h1>大學四年自我期許</h1>
+              <h3>
+                希望在大學四年，可以多多利用學校的資源學習更多東西，希望自己可以學業和玩樂都可以同時具進，不然到了出社會後，能夠有自己時間的機會就變少了，想要學習不一樣的知識時，就花錢去學習，不如在大學的時候學一學，反正學費都繳給學校了，還不好好學
+              </h3>
+      
+            </div>
+      </div>
+      <div id="5">
+          <div class="imgbox">
+
+            </div>
+      </div>
+      
 </article>
 
 <footer>
-     <img src="img/information.png" alt="information" width="400px" height="200">
-    <a href="https://www.instagram.com/ziyi.hong.3/?hl=zh-tw"><img src="img/ig.png" alt="ig" width="100px" height="100"></a>
-    <a href="https://www.facebook.com/ziyi.hong.3"><img src="img/fb.png" alt="fb" width="150px" height="200"></a>
-    <a href="https://line.me/ti/p/ig5PmxLttE"><img src="img/line.png" alt="line" width="100px" height="100"></a>
-    <img src="img/reserence.png" alt="reserence" width="400" height="200">
+  <div class="box2">
+      <img src="img/information.png" alt="information" width="400px" height="200">
+      <a href="https://www.instagram.com/ziyi.hong.3/?hl=zh-tw"><img src="img/ig.png" alt="ig" width="100px" height="100"></a>
+      <a href="https://www.facebook.com/ziyi.hong.3"><img src="img/fb.png" alt="fb" width="150px" height="200"></a>
+      <a href="https://line.me/ti/p/ig5PmxLttE"><img src="img/line.png" alt="line" width="100px" height="100"></a>
+      <img src="img/reserence.png" alt="reserence" width="200" height="200">
+  </div>  
 </footer>
 
 </body>
