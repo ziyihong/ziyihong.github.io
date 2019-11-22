@@ -4,218 +4,24 @@
 <title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url("img/backg.png");
-  margin: 40px;
-}
-
-/* Style the header */
-header {
-  font-size: 35px;
-  color: white;
-}
-.logo{
-  background-image: url("img/desk.png");
-  padding: 20px;
-  text-align: center;
-}
-
-.na{
-    background-color:;
-    right: 10px;
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
-    background-image: url("img/desk.png");
-}
-a{
-  color:black;
-  text-decoration: none;
-  font-weight: bolder;
-}
-a:hover {
-color:black;
-font-size: 50px;
-
-}
-
-.head{
-    background-color:white;
-    border: 3px solid black;
-    text-align: center;
-    margin-top: 20px;
-    
-}
-.box1{
-display: inline;
-}
-
-
-
-.container1{
-  /*display: -webkit-flex;*/
-  display: flex;
-}
-
-/* Style the navigation menu */
-nav {
-  float: left;
-  width: 30%;
-  text-align: center;
-  background:rgba(187, 206, 235, 0.712);
-  bottom: 40px;
-  padding: 25px;
-  background-image: url("img/desk.png");
-  margin-top: 20px;
-}
-
-/* Style the content */
-aside{
-  float: right;
-  width: 70%;
-  flex: 3;
-  background-color:rgb(216, 208, 208);
-  padding:10px;
-  padding-left: 0%;
-  text-align: left;
-  background-image: url("img/desk.png");
-  margin-top: 20px;
-}
-.centered-wrap{
-  position: relative;
-  left: 30%;
-  
-}
-
-.card-wrap{
-  width:200px;
-  height:280px;
-  position:relative;
-}
-
-.card{
-  position: relative;
-  left: 20px;
-  bottom:50px;
-  width:100%;
-  height:100%;
-  /*preserve the back when fliping*/
-  transform-style:preserve-3d;
-  transition:0.5s all ease;
-  /*box-shadow:0px 0px 10px rgba(10,10,0.8);*/
-}
-
-/*front card*/
-.card-front{
-  border-radius:20px;
-  position:absolute;
-  top:0mm;
-  background:#e8e8e8;
-  backface-visibility:hidden;
-  color:#333;
-  font-size:1.5rem;
-}
-
-.card-front span:nth-of-type(1){
-  display:block;
-  position:absolute;
-  top:5%;
-  left:5%;
-}
-
-.card-front img{
-  border-radius: 20px;
-  display:block;
-  position: relative;
-}
-
-.card-front span:nth-of-type(2){
-  display:block;
-  position:absolute;
-  right:5%;
-  bottom:5%;
-}
-
-/*back card*/
-.card-back{
-  border-radius:10px;
-  padding: 0;
-  position:fixed;
-  top: 0mm;
-  width:208px;
-  height:315px;
-  /*hide backface*/
-  backface-visibility:hidden;
-  color:#333;
-  font-size:1.5rem;
-  /*background:url("img/name.png");*/
-  /*flip card-back behind card-front*/
-  transform:rotateY(180deg);
-}
-.card:hover{
-  transform:rotateY(180deg);
-}
-table{
-  padding-left: 0mm;
-  padding-right: 20px;
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-td{
-  width: 220px;
-  height: 320px;
-}
-article{
-  background-color: rgba(255, 255, 255, 0.788);
-  
- 
-}
-.box{
-  background-color: seashell;
-  padding: 20px;
-  margin-top: 20px;
-}
-.imgbox{
-  background-color: seashell;
-  padding: 20px;
-  margin-top: 20px;
-}
-/* Style the footer */
-footer {
-  background-color:black;
-  padding: 20px;
-  text-align: left;
-  color: white;
-}
-.box2{
-  display: inline;
-  padding: 40px;
-  text-align: center;
-}
-
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-</style>
+  @import url("introduceme.css");
+  </style>
 </head>
 <body>
+    <div id="MyBlog">
+      <a href="https://www.instagram.com/ziyi.hong.3/?hl=zh-tw" target="_blank"><img src="img/ig.png" alt="ig" width="30px" height="30px"></a><br>
+      <a href="https://www.facebook.com/ziyi.hong.3" target="_blank"><img src="img/fb.png" alt="fb" width="30px" height="30px"></a><br>
+      <a href="https://line.me/ti/p/ig5PmxLttE" target="_blank"><img src="img/line.png" alt="line" width="30px" height="30px"></a>
+        </div>
 <header>
   <div class="logo">
       <img src="img/banner.png" alt="banner" width="70px" height="60">
       <img src="img/banner.png" alt="banner" width="70px" height="60">
       <img src="img/banner.png" alt="banner" width="70px" height="60">
   
-      <img src="img/bannerw.png" alt="banner" height="60">
+      <img src="img/bannerw.png" alt="banner" height="200px" width="400">
         <img src="img/banner.png" alt="banner" width="70px" height="60">
         <img src="img/banner.png" alt="banner" width="70px" height="60">
         <img src="img/banner.png" alt="banner" width="70px" height="60"> 
@@ -232,106 +38,109 @@ footer {
   </div>
   <div class="head">
       <div class="box1">
-          <img src="img/backgroundleft.png" alt="backgroundleft" width="100px" height="180">
-          <img src="img/back.png" alt="back" width="200" height="180">
-            <img src="img/logo.png" alt="my logo" width="450" height="180">
-            <img src="img/back.png" alt="back" width="200" height="180">
-            <img src="img/backgroundright.png" alt="backgroundright" width="100px" height="170">
+          <div class="w3-content w3-display-container">
+              <img class="mySlides" src="img/light1.jpg" style="width:100% ;height:300;">
+              <img class="mySlides" src="img/light2.jpg" style="width:100%;height:300;">
+              <img class="mySlides" src="img/light1.jpg" style="width:100% ;height:300;">
+              <img class="mySlides" src="img/light2.jpg" style="width:100%;height:300;">
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
       </div>
          
   </div>
 </header>
 <div class="container1">
   <nav>
-       
        <div id="0">
-          <br><br><br><br><br><br>
-          <img src="img/jocker.png" alt="jocker" width="380" height="500">
-       </div>
-      
 
-  </nav>
-  
-  <aside>
-    <br><br><br>
-        <table>
-          <td>
-              <div class="centered-wrap">
-                  <div class="card-wrap">
-                    <div class="card">
-                      <div class="card-front">
-                        <img src="img/nameb.png" width="100%" height="100%">
-                          <div class="card-back"><img src="img/name.png"width="100%" height="100%" ></div>
-                      </div>
+              <table>
+                <tr>
+                  <td rowspan="2">
+                      <img src="img/jocker.png" alt="jocker" width="280" height="400"> 
+                  </td>
+                  <td>
+                      <div class="centered-wrap">
+                          <div class="card-wrap">
+                            <div class="card">
+                              <div class="card-front">
+                                <img src="img/nameb.png" width="100%" height="100%">
+                                  <div class="card-back"><img src="img/name.png"width="100%" height="100%" ></div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
-                  </div>
-            </div>
-          </td>
-          <td>
-              <div class="centered-wrap">
-                  <div class="card-wrap">
-                    <div class="card">
-                      <div class="card-front">
-                        <img src="img/genderb.png" width="100%" height="100%">
-                          <div class="card-back"><img src="img/gender.png"width="100%" height="100%" ></div>
-                      </div>
+                  </td>
+                  <td>
+                      <div class="centered-wrap">
+                          <div class="card-wrap">
+                            <div class="card">
+                              <div class="card-front">
+                                <img src="img/genderb.png" width="100%" height="100%">
+                                  <div class="card-back"><img src="img/gender.png"width="100%" height="100%" ></div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
-                  </div>
-            </div>
-          </td>
-          <td>
-              <div class="centered-wrap">
-                  <div class="card-wrap">
-                    <div class="card">
-                      <div class="card-front">
-                        <img src="img/bloodb.png" width="100%" height="100%">
-                          <div class="card-back"><img src="img/blood.png"width="100%" height="100%" ></div>
-                      </div>
+                  </td>
+                  <td>
+                      <div class="centered-wrap">
+                          <div class="card-wrap">
+                            <div class="card">
+                              <div class="card-front">
+                                <img src="img/bloodb.png" width="100%" height="100%">
+                                  <div class="card-back"><img src="img/blood.png"width="100%" height="100%" ></div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
-                  </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-              <div class="centered-wrap">
-                  <div class="card-wrap">
-                    <div class="card">
-                      <div class="card-front">
-                        <img src="img/interstingb.png" width="100%" height="100%">
-                          <div class="card-back"><img src="img/intersting.png"width="100%" height="100%" ></div>
-                      </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>
+                      <div class="centered-wrap">
+                          <div class="card-wrap">
+                            <div class="card">
+                              <div class="card-front">
+                                <img src="img/interstingb.png" width="100%" height="100%">
+                                  <div class="card-back"><img src="img/intersting.png"width="100%" height="100%" ></div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
-                  </div>
-            </div>
-          </td>
-          <td>
-              <div class="centered-wrap">
-                  <div class="card-wrap">
-                    <div class="card">
-                      <div class="card-front">
-                        <img src="img/constellationb.png" width="100%" height="100%">
-                          <div class="card-back"><img src="img/constellation.png"width="100%" height="100%" ></div>
-                      </div>
+                  </td>
+                  <td>
+                      <div class="centered-wrap">
+                          <div class="card-wrap">
+                            <div class="card">
+                              <div class="card-front">
+                                <img src="img/constellationb.png" width="100%" height="100%">
+                                  <div class="card-back"><img src="img/constellation.png"width="100%" height="100%" ></div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
-                  </div>
-            </div>
-          </td>
-          <td>
-              <div class="centered-wrap">
-                  <div class="card-wrap">
-                    <div class="card">
-                      <div class="card-front">
-                        <img src="img/birthdayb.png" width="100%" height="100%">
-                          <div class="card-back"><img src="img/birthday.png"width="100%" height="100%" ></div>
-                      </div>
+                  </td>
+                  <td>
+                      <div class="centered-wrap">
+                          <div class="card-wrap">
+                            <div class="card">
+                              <div class="card-front">
+                                <img src="img/birthdayb.png" width="100%" height="100%">
+                                  <div class="card-back"><img src="img/birthday.png"width="100%" height="100%" ></div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
-                  </div>
-            </div>
-          </td>
-        </tr>
-        </table>
-  </aside>
+                  </td>
+                </tr>
+              </table>
+      </nav>
+              
+      <aside>     
+      <img src="img/information.png" width="280" height="360">
+      </aside>
 </div>
 <article>
      
@@ -347,7 +156,8 @@ footer {
       <div id="2">
           <div class="box">
             <h1>學歷背景</h1>
-            <img src="img/zlsh+cycu.png" alt="school" width="600" height="200">
+            <a href="http://www.zlsh.tp.edu.tw/bin/home.php" target="_blank"><img src="img/zlsh.png" alt="school" width="300" height="200"></a>
+            <a href="https://www1.cycu.edu.tw/"  target="_blank"><img src="img/cycu.png" alt="school" width="300" height="200" ></a>
         </div>
       </div>
       <div id="3">
@@ -372,20 +182,33 @@ footer {
       <div id="5">
           <div class="imgbox">
 
-            </div>
+          </div>
       </div>
       
 </article>
 
 <footer>
-  <div class="box2">
-      <img src="img/information.png" alt="information" width="400px" height="200">
-      <a href="https://www.instagram.com/ziyi.hong.3/?hl=zh-tw"><img src="img/ig.png" alt="ig" width="100px" height="100"></a>
-      <a href="https://www.facebook.com/ziyi.hong.3"><img src="img/fb.png" alt="fb" width="150px" height="200"></a>
-      <a href="https://line.me/ti/p/ig5PmxLttE"><img src="img/line.png" alt="line" width="100px" height="100"></a>
-      <img src="img/reserence.png" alt="reserence" width="200" height="200">
-  </div>  
+    
+      
 </footer>
-
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
 </body>
 </html>

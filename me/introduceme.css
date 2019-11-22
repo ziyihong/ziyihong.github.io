@@ -1,0 +1,227 @@
+body {
+  font-family: Microsoft JhengHei;
+  background-image: url("img/backg.png");
+  margin: 40px;
+}
+.mySlides {
+  display:none;
+  text-align: center;
+
+}
+/* Style the header */
+header {
+  font-size: 35px;
+  color: white;
+}
+.logo{
+  background-image: url("img/container.png");
+  background-size:100% 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.na{
+    right: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    background-image: url("img/container.png");
+    background-size:100% 100%;
+}
+a{
+  color:black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+a:hover {
+color:black;
+font-size: 40px;
+
+}
+
+.head{
+    text-align: center;
+    
+}
+.box1{
+display: inline;
+}
+.container1{
+  /*display: -webkit-flex;*/
+  display: flex;
+  background-image:url("img/container.png");
+  background-size:102% 120%;
+
+  
+}
+
+/* Style the navigation menu */
+nav {
+  float: left;
+  width: 70%;
+  text-align: left;
+  bottom: 40px;
+  padding: 25px;
+  padding-right:35px;
+  margin-top: 20px;
+}
+
+/* Style the content */
+aside{
+  float: right;
+  width: 30%;
+  flex: 3;
+  padding:10px;
+  padding-top: 40px;
+  padding-left: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+.connect{
+  float: right;
+  position: relative;
+  top: 0%;
+  width: 10%;
+
+}
+.centered-wrap{
+  position: relative;
+  left: 30%;
+  
+}
+
+.card-wrap{
+  width:100px;
+  position:relative;
+}
+
+.card{
+  position: relative;
+  left: 20px;
+  bottom:50px;
+  width:100%;
+  /*preserve the back when fliping*/
+  transform-style:preserve-3d;
+  transition:0.5s all ease;
+  /*box-shadow:0px 0px 10px rgba(10,10,0.8);*/
+}
+
+/*front card*/
+.card-front{
+  border-radius:20px;
+  position:absolute;
+  top:0mm;
+  backface-visibility:hidden;
+  color:#333;
+  font-size:1.5rem;
+}
+
+.card-front span:nth-of-type(1){
+  display:block;
+  position:absolute;
+  top:5%;
+  left:5%;
+}
+
+.card-front img{
+  border-radius: 20px;
+  display:block;
+  position: relative;
+}
+
+.card-front span:nth-of-type(2){
+  display:block;
+  position:absolute;
+  right:5%;
+  bottom:5%;
+}
+
+/*back card*/
+.card-back{
+  border-radius:10px;
+  padding: 0;
+  position:fixed;
+  top: 0mm;
+  width:108px;
+  height:165px;
+  /*hide backface*/
+  backface-visibility:hidden;
+  color:#333;
+  font-size:1.5rem;
+  /*background:url("img/name.png");*/
+  /*flip card-back behind card-front*/
+  transform:rotateY(180deg);
+}
+.card:hover{
+  transform:rotateY(180deg);
+}
+table{
+  width: 850px; 
+}
+td{
+  height: 200px;
+  width: 400px;
+}
+article{
+  background-color: rgba(255, 255, 255, 0.788);
+}
+.box{
+  background-color: seashell;
+  padding: 20px;
+  margin-top: 20px;
+}
+.imgbox{
+  background-color: seashell;
+  padding: 20px;
+  margin-top: 20px;
+}
+/* Style the footer */
+footer {
+  background-color:black;
+  padding: 20px;
+  text-align: left;
+  color: white;
+}
+.box2{
+  display: inline;
+  padding: 40px;
+  text-align: center;
+}
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+#MyBlog{
+
+  position: fixed;  /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
+
+  top:0%;  /*設置垂直位置*/
+  right:0%;
+
+  background-color:black; /*背景顏色*/
+
+  padding: 10px 20px;
+
+  border-radius: 10px;  /*圓角*/
+
+  -moz-border-radius: 10px;
+
+  -webkit-border-radius: 10px;
+
+}
+
+#MyBlog:hover{  /*當滑鼠移至此區塊時，伸縮區塊*/
+
+  right: -10px;
+
+}
+
+#MyBlog #title{
+
+  padding-right: 5px;  /*讓標題與連結中間有空隙*/
+
+}
