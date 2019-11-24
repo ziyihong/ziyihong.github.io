@@ -24,6 +24,7 @@ header {
     right: 10px;
     padding: 20px;
     margin-top: 20px;
+    margin-bottom: 40px;
     text-align: center;
     letter-spacing: 3px;
     background-image: url("img/container.png");
@@ -36,7 +37,8 @@ a{
 }
 a:hover {
 color:black;
-font-size: 40px;
+font-weight: bolder;
+text-decoration: underline;
 
 }
 
@@ -74,7 +76,7 @@ aside{
   flex: 3;
   padding:10px;
   padding-top: 40px;
-  padding-left: 30px;
+  padding-left: 40px;
   text-align: center;
   margin-top: 20px;
 }
@@ -171,10 +173,46 @@ article{
   padding: 20px;
   margin-top: 20px;
 }
+h1{
+  font-weight: bolder;
+}
+h2{
+  font-weight: bold;
+}
 .imgbox{
-  background-color: seashell;
+  background-image: url("img/imgboxb.png");
+  background-size: 100%;
   padding: 20px;
   margin-top: 20px;
+}
+.boxclub{
+   background-image: url("img/backclub.png");
+   background-size: 100%;
+   padding: 30px;
+   padding-top: 100px;
+   padding-bottom: 75px;
+
+}
+.boxschool{
+  background-image: url("img/backschool.png");
+  background-size: 100%;
+  padding: 30px;
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+.boxpresue{
+  background-image: url("img/backpresue.png");
+  background-size: 100%;
+  padding: 30px;
+  padding-top: 120px;
+  padding-bottom: 75px;
+}
+.boxhope{
+  background-image: url("img/backhope.png");
+  background-size: 100%;
+  padding: 30px;
+  padding-top: 150px;
+  padding-bottom: 75px;
 }
 /* Style the footer */
 footer {
