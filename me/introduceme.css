@@ -59,7 +59,7 @@ display: inline;
 }
 
 /* Style the navigation menu */
-nav {
+section{
   float: left;
   width: 70%;
   text-align: left;
