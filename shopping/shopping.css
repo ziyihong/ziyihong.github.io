@@ -8,11 +8,6 @@ html, body
 	padding: 0;
 	margin: 0;
 }
-nav{
-	text-align: left;
-	padding: 20px;
-	background-color:yellowgreen;
-}
 body
 {
 	background-color: #fff;
@@ -24,6 +19,78 @@ body
 	-webkit-text-size-adjust: none;
 }
 
+h1, h2, h3, h4, h5, h6
+{
+	line-height: 1;
+	font-weight: bold;
+	margin: 20px 0 10px 0;
+}
+a, a:link, a:active, a:visited, a:hover
+{
+	color: inherit;
+	text-decoration: underline;
+}
+header{
+
+    background-color: cadetblue;
+    padding: 20px;
+
+}
+nav:not(.mm-menu)
+{
+	display: none;
+}
+
+.header,
+.content,
+.footer
+{
+	text-align: center;
+}
+.header,
+.footer
+{
+	background: #4E8393;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 40px;
+
+
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	width: 100%;
+	height: 40px;
+	padding: 0 50px;
+}
+.header.fixed
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.footer.fixed
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.header a
+{
+	background: center center no-repeat transparent;
+	background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC );
+
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+.content
+{
+	padding: 150px 50px 50px 50px;
+}
 .container{
     background-color: darkgrey;
     padding: 20px;
@@ -32,6 +99,110 @@ body
     background-color: darkseagreen;
     padding: 20px;
 }
+
+  .slider_container div {
+	position: absolute;
+	padding: 10px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-animation: round 25s linear infinite;
+	animation: round 25s linear infinite;
+  }
+  .slider_container div img {
+    text-align: center;
+  }
+  @-webkit-keyframes round {
+	4% {
+	  opacity: 1;
+	  filter: alpha(opacity=100);
+	  /* 0 - 1秒 淡入*/
+	}
+	20% {
+	  opacity: 1;
+	  filter: alpha(opacity=100);
+	  /* 1- 5秒靜止*/
+	}
+	24% {
+	  opacity: 0;
+	  filter: alpha(opacity=0);
+	  /* 5-6秒淡出*/
+	}
+  }
+  @keyframes round {
+	4% {
+	  opacity: 1;
+	  filter: alpha(opacity=100);
+	  /* 0 - 1秒 淡入*/
+	}
+	20% {
+	  opacity: 1;
+	  filter: alpha(opacity=100);
+	  /* 1- 5秒靜止*/
+	}
+	24% {
+	  opacity: 0;
+	  filter: alpha(opacity=0);
+	  /* 5-6秒淡出*/
+	}
+  }
+  .slider_container div:nth-child(5) {
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+  }
+  .slider_container div:nth-child(4) {
+	-webkit-animation-delay: 5s;
+	animation-delay: 5s;
+  }
+  .slider_container div:nth-child(3) {
+	-webkit-animation-delay: 10s;
+	animation-delay: 10s;
+  }
+  .slider_container div:nth-child(2) {
+	-webkit-animation-delay: 15s;
+	animation-delay: 15s;
+  }
+  .slider_container div:nth-child(1) {
+	-webkit-animation-delay: 20s;
+	animation-delay: 20s;
+  }
+  .slider_container:hover div {
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+  }
+  .rwd_slider_container_wrapper {
+	width: 440px;
+	max-width: 100%;
+	box-sizing: border-box;
+	box-shadow: #666 0 0 5px;
+	padding: 20px;
+	margin: 0 auto;
+  }
+  .rwd_slider_container {
+	position: relative;
+	display: block;
+	height: 0;
+	padding: 0;
+	box-sizing: border-box;
+	padding-bottom: calc(70% + 100px);
+  }
+  .rwd_slider_container .slider_container {
+	box-shadow: none;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	background-color: transparent;
+  }
+  .rwd_slider_container .slider_container div {
+	width: 100%;
+	line-height: 0;
+  }
 .slogan{
     background-color: deepskyblue;
     padding: 20px;
@@ -87,6 +258,11 @@ a, a:link, a:active, a:visited, a:hover
 	text-decoration: underline;
 }
 
+nav:not(.mm-menu)
+{
+	display: none;
+}
+
 .header,
 .content,
 .footer
@@ -109,4 +285,31 @@ a, a:link, a:active, a:visited, a:hover
 	height: 40px;
 	padding: 0 50px;
 }
+.header.fixed
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.footer.fixed
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.header a
+{
+	background: center center no-repeat transparent;
+	background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC );
 
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+.content
+{
+	padding: 150px 50px 50px 50px;
+}

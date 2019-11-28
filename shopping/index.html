@@ -10,20 +10,51 @@
 <style>
  @import url("shopping.css");
 </style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
 </head>
 <body translate="no">
-<header>
-  hello world
-</header>
-<nav>
-  <a href="index.html">home</a>
-  <a href="everybody.html">精選情人</a>
-  <a href="">會員專區</a>
-  <a href="aboutus.html">我們</a>
+<header></header>
+<div class="page">
+<div class="header">
+<a href="#menu" data-icon="grid"></a>
+<nav id="menu">
+<ul>
+<li><a href="">特選情人</a></li>
+<li><a href="">熱門人物</a></li>
+<li><a href="">購物車</a></li>
+<li><a href="">加入會員</a></li>
+<li><a href="">聯絡我們</a></li>
+<li><a href="">關於我們</a></li>
+</ul>
 </nav>
+</div>
+</div>
 <div class="container">
     <div class="light">
-       
+      <div class="slider_container">
+        <div>
+          <img src="img/01.jpg" alt="pure css3 slider" width="100%" height="100%">
+        </div>
+        <div>
+          <img src="img/02.jpg" alt="pure css3 slider" width="100%" height="100%" >
+        </div>
+        <div>
+          <img src="img/03.jpg" alt="pure css3 slider"  width="100%" height="100%">
+        </div>
+        <div>
+          <img src="img/04.jpg" alt="pure css3 slider" width="100%" height="100%" >
+        </div>
+        <div>
+          <img src="img/03.jpg" alt="pure css3 slider"  width="100%" height="100%">
+        </div>
+      </div>
    </div>
    <div  class="slogan">
 
@@ -35,6 +66,17 @@
 
     </footer>
 </div>
+
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+<script src='https://code.jquery.com/jquery-1.8.3.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.5/jquery.mmenu.all.js'></script>
+<script id="rendered-js">
+      $(function () {
+  $('nav#menu').mmenu();
+});
+      //# sourceURL=pen.js
+    </script>
+<script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
 </body>
 </html>
 
