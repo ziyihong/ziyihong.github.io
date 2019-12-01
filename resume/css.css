@@ -1,0 +1,172 @@
+body{
+    margin: 0%;
+    padding: 50px;
+    font-family: '微軟正黑體';
+}
+nav{
+    background-color: antiquewhite;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+section{
+    padding: 100px;
+    padding-top:50px ;
+    background-color:powderblue;
+    border-width: 10px;
+    border-style: double;
+    border-color: darkslateblue;
+    margin: 20px;
+    height: 560px;
+    overflow: hidden;
+}
+
+.logo{
+    padding-left: 30px;
+    padding-top: 10px;
+    float: left;
+}
+/*
+.nav{
+    float:right;
+    font-size: 18px;
+    padding-top: 10px;   
+}
+.nav ul{
+    margin: 10px;
+}
+.nav li :hover{
+    color: rgb(158, 134, 158);
+    border-top: 8px solid  rgb(158, 134, 158);
+    
+}
+.nav li{
+    display: inline;
+    padding: 20px;
+}
+.nav li a {
+    padding: 10px;
+    color:gray;
+    text-decoration:none;
+    font-weight:bolder;
+}*/
+.me{
+    background: rgb(227, 239, 240);
+    border-radius: 100px;
+    padding: 50px;
+    box-shadow: dimgray 6px 6px 6px;
+    width: 50%;
+    border:10px yellow dotted;
+
+}
+.me img{
+    float: left;
+    margin: 20px;
+    border-radius: 100px;
+}
+a img{
+    padding: 20px;
+}
+article{
+    margin: 20px;
+    border-width: 10px;
+    border-style: double;
+    border-color: darkslateblue;
+    position: static;
+    padding: 10px;
+    background-color: rgb(213, 170, 253);
+}
+.container{
+    padding: 50px;
+    border:10px yellow dotted;
+    
+}
+th{
+    padding: 20px;
+}
+.container1{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(161, 231, 240, 0.945);
+    border-radius: 20px;
+    box-shadow: darkcyan 10px 10px 10px;
+    color:rgb(111, 138, 187);
+    border:10px solid darkcyan;
+}
+h1{
+    font-size: 36px;
+    color:rgb(111, 138, 187);
+}
+h2{
+    font-size: 24px;
+    color:rgb(111, 138, 187);
+}
+.skillbox{
+    box-sizing: border-box;
+	margin: 5px;
+	padding: 5px;
+	color:rgb(111, 138, 187);
+    font-family:'微軟正黑體';
+    font-weight: bolder;
+	font-size: 24px;
+}
+
+.skill_title{
+	color:	rgb(111, 138, 187);
+	font-family: '微軟正黑體';
+	font-weight: bolder;
+	font-size: 36px;
+}
+.skill{
+	background-color: #1b0f5f;
+	padding: 4px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 24px;
+	color:rgb(111, 138, 187);
+	border-radius: 50px;
+}
+.skill_level{
+	background-color:rgba(161, 231, 240, 0.945);
+	border-radius: 50px;
+	text-align: center;
+	height:30px;
+}
+.c{
+	animation-name: skillc;
+	animation-duration: 3s;
+}
+.java{
+	animation-name: skilljava;
+	animation-duration: 3s;
+}
+.html{
+	animation-name: skillhtml;
+	animation-duration: 3s;
+}
+.word{
+	animation-name: skillword;
+	animation-duration: 3s;
+}
+th{
+    width: 1000px;
+}
+@keyframes skillc{
+	0%{width: 0%}
+	100%{width: 70%}
+}
+@keyframes skilljava{
+	0%{width: 0%}
+	100%{width: 75%}
+}
+@keyframes skillhtml{
+	0%{width: 0%}
+	100%{width: 60%}
+}
+@keyframes skillword{
+	0%{width: 0%}
+	100%{width: 68%}
+}
