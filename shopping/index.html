@@ -135,6 +135,26 @@ table{
   margin-left: auto;
   margin-right: auto;
 }
+.hot{
+  text-align: center;
+}
+.hot h1{
+  font-size: 40px;
+   color: rgb(236, 148, 195);
+   letter-spacing: 5px;
+}
+.hot h2{
+  font-size: 38px;
+   color: rgb(126, 201, 226);
+   padding: 10px;
+   letter-spacing: 5px;
+}
+.hot img{
+  transform:scale(1,1);
+}
+.hot img:hover{
+  transform:scale(1.2,1.2);
+}
 </style>
 </head>
 <body translate="no">
@@ -160,7 +180,7 @@ table{
         </li>
     </ul>
     <div class="logo">
-        <div class="a"><a href="index.html"><img src="img/logo.png" alt="logo" width="200px" height="80px"></a></div>
+        <a href="index.html"><img src="img/logo.png" alt="logo" width="200px" height="80px"></a>
     </div>
     <div class="a"><a href="shoppingcart.html"><img src="img/shoppingcar.png" alt="shoppingcar" width="30px" height="30px"></a></div>
     <div class="b"> <a href="memberlogin.html"><img src="img/member.png" alt="member" width="30px" height="30px"></a></div>
@@ -199,19 +219,21 @@ table{
          </h1>
    </div>
    <div class="hot">
+     <h1>熱門人物</h1>
+     <h2>最搶手的他 等你牽起他的手</h2>
      <table>
        <tr>
          <td>
             <div class="pickb">
-                <img src="img/b1.jpg" alt="男生1"width="350px" height="450px" >
+                <a href="person4.html"><img src="img/b1.jpg" alt="男生1"width="350px" height="450px" >
                <img src="img/pickmeb.png" alt="男生pick" onmouseover="this.src=' img/pickmeb2.png ';" onmouseout="this.src=' img/pickmeb.png ';" width="200px" height="200px">
-
+              </a>
             </div>
          </td>
          <td>
             <div class="pickg">
-                <img src="img/pickmeg.png" alt="女生pick" onmouseover="this.src=' img/pickmeg2.png ';" onmouseout="this.src=' img/pickmeg.png ';" width="220px" height="220px">
-                <img src="img/g1.jpg" alt="女生1" width="350px" height="450px">
+                <a href="person1.html"></a><img src="img/pickmeg.png" alt="女生pick" onmouseover="this.src=' img/pickmeg2.png ';" onmouseout="this.src=' img/pickmeg.png ';" width="220px" height="220px">
+                </a><img src="img/g1.jpg" alt="女生1" width="350px" height="450px"></a>
               </div>
          </td>
        </tr>
