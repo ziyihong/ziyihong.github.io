@@ -7,8 +7,9 @@
 <title>購物車</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.3/jquery.mmenu.all.css'>
-<script src="shopping.js">
- $(function(){
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function(){
 $(".add").click(function(){
 var t=$(this).parent().find('input[class*=text_box]');
 t.val(parseInt(t.val())+1)
@@ -32,7 +33,7 @@ $("#total").html(s.toFixed(2));
 setTotal();
 
 })
- </script>
+</script>
 <style>
  @import url("shopping.css");
   .shopping{
