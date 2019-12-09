@@ -1,0 +1,39 @@
+.shopping{
+    padding: 50px;
+  }
+  .item{
+    clear: left;
+    display: inline;
+    display: table;
+    background-color: blanchedalmond;
+    padding: 20px;
+  }
+  #Exa1 li{
+    float:left;
+    padding: 5px;
+    height: 200px;
+    text-align: center;
+    border-right:1px solid rgba(54, 98, 179, 0.397);
+}
+.text{
+  font-size: 16px;
+  letter-spacing: 4px;
+  line-height: 40px;
+  width: 180px;
+}
+.container{
+  padding: 10px;
+  padding-top: 20px;
+}
+table{
+  text-align: left;
+  line-height: 45px;
+}
+.submit{
+  text-align: center;
+  padding: 10px;
+}
+.submit input{
+  width: 100px;
+  height: 50px;
+}
