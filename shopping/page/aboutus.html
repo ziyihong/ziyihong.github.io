@@ -37,6 +37,49 @@
           </div>
           <div class="a"><a href="shoppingcart.html"><img src="../img/shoppingcar.png" alt="shoppingcar" width="30px" height="30px"></a></div>
           <div class="b"> <a href="memberlogin.html"><img src="../img/member.png" alt="member" width="30px" height="30px"></a></div>
+          <div class="b"><button onclick="document.getElementById('id01').style.display='block'" style="width:50px;" ><img src="../img/member.png" alt="member" width="30px" height="30px"></a></button>
+
+            <div id="id01" class="modal">
+              
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="../img/member.png" alt="Avatar" class="avatar">
+                </div>
+            
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+            
+                <div class="container" style="background-color:rgb(250, 232, 209)">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <a href="register.html"><button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Register</button></a>
+                
+                </div>
+              </form>
+            </div>
+            
+            <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+            </div>
           <div class="demo">
             <input type="text" placeholder="請搜尋...." >
             <input type="submit" value="確認">
