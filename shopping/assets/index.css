@@ -1,3 +1,13 @@
+.slogan{
+  padding: 100px;
+  font-size:30px;
+  color: aliceblue;
+  background-c
+  color: rgb(60, 181, 236);
+}
+.light{
+  background-color: pink;
+}
 .slider_container {
     overflow: hidden;
     padding: 20px;
@@ -10,6 +20,7 @@
     opacity: 1;
     filter: alpha(opacity=100);
     width: 100%;
+    height: 500px;
     animation: bk 25s linear;
   }
   .slider_container div {
@@ -20,11 +31,13 @@
     filter: alpha(opacity=100);
     left: 100%;
     width: 100%;
+    height: 500px;
     -webkit-animation: round 25s linear infinite;
     animation: round 25s linear infinite;
   }
   .slider_container div img {
     width: 100%;
+    height: 500px;
   }
   @-webkit-keyframes round {
     4% {
@@ -102,10 +115,10 @@
   .rwd_slider_container {
     position: relative;
     display: block;
-    height: 0;
+    height: 500px;
     padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     overflow: hidden;
     padding-bottom: 30%;
     box-sizing: border-box;
