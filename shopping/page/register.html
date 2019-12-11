@@ -4,16 +4,20 @@
 <meta charset="UTF-8">
 <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
-<title>我的訂單</title>
+<title>註冊會員</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.3/jquery.mmenu.all.css'>
 <style>
  @import url("../assets/shopping.css");
- @import url("../assets/order.css");
+ @import url("../assets/register.css");
 </style>
 </head>
 <body translate="no">
 <header>
+  <div class="logo">
+    <a href="../index.html"><img src="../img/logo.png" alt="logo" width="200px" height="80px"></a>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </header>
 <nav>
@@ -26,7 +30,7 @@
             </li>
             <li><a href="order.html">我的訂單</a>
             </li>
-            <li><a href="comment.html">我的評論</a>
+            <li><a href="commeent.html">我的評論</a>
             </li>
             <li><a href="edit.html">個人資料編輯</a>
             </li>
@@ -36,8 +40,8 @@
         </li>
     </ul>
     <div class="logo">
-        <a href="../index.html"><img src="../img/logo.png" alt="logo" width="200px" height="80px"></a>
-    </div>
+      <a href="../index.html"><img src="../img/logo.png" alt="logo" width="200px" height="80px"></a>
+  </div>
     <div class="a"><a href="shoppingcart.html"><img src="../img/shoppingcar.png" alt="shoppingcar" width="30px" height="30px"></a></div>
     <div class="b"> <a href="memberlogin.html"><img src="../img/member.png" alt="member" width="30px" height="30px"></a></div>
     <div class="b"><button onclick="document.getElementById('id01').style.display='block'" style="width:50px;" ><img src="../img/member.png" alt="member" width="30px" height="30px"></a></button>
@@ -89,29 +93,47 @@
   </div>
 </nav>
 <div class="container">
+
    <div class="hot">
-      <h1>我的訂單</h1>
-      <div class="side">
-          <a href="person3.html"><img src="../img/g3.jpg" width="300px"></a>  
+    <form action="/action_page.php" style="max-width:500px;margin:auto">
+      <h2 >個人資料編輯</h2>
+      <div class="input-container">
+        <i class="fa fa-user icon"></i>
+        <input class="input-field" type="text" placeholder="姓名" name="usrnm">
       </div>
-   <div class="coupon">
-      <div class="cont">
-       <h2><b>一日約會對象：亞亞</b></h2>
-       <p> &nbsp; </p>
-        <p>約會日期：將於108/12/25與您約會</p>
-        <p> &nbsp; </p>
-        <p>備註：希望你穿粉紅色衣服</p>
-        <p>&nbsp; </p>
-        <p>加購項目：開車接送20km</p>
-        <p>&nbsp; </p>
-        <p>祝您有美好的一天</p>
+      <div class="input-container">
+        <i class="fa fa-user icon"></i>
+        <input class="input-field" type="date" placeholder="生日" name="usrnm">
+      </div>
+      <div class="input-container" >
+        <i class="fa fa-user icon"></i>     
+        <select name="性別" id="性別"class="input-field" >
+          <option value="性別">性別</option>
+          <option value="男">男</option>
+          <option value="女">女</option>
+        </select>
+
+      </div>
+      <div class="input-container">
+        <i class="fa fa-envelope icon"></i>
+        <input class="input-field" type="text" placeholder="Email" name="email">
+      </div>
+      
+      <div class="input-container">
+        <i class="fa fa-key icon"></i>
+        <input class="input-field" type="password" placeholder="設定密碼" name="psw">
+      </div>
+      <div class="input-container">
+        <i class="fa fa-key icon"></i>
+        <input class="input-field" type="password" placeholder="再次確認密碼" name="psw">
+      </div>
+      <button type="submit" class="btn"> <a href="../index.html">註冊會員</button></a>
+    </form>
     
-    </div>
-    </div>
-  </div>
-</div>
-    <footer>
-      <h1>Copyright © 2012 one day lover Inc. All rights reserved</h1>
+   </div>
+   </div>
+   <footer>
+    <h1>Copyright © 2012 one day lover Inc. All rights reserved</h1>
     </footer>
 </div>
 </body>
