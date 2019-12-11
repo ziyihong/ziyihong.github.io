@@ -32,6 +32,7 @@ $("#total").html(s.toFixed(2));
 }
 setTotal();
 })
+
 </script>
 <style>
  @import url("../assets/shopping.css");
@@ -180,10 +181,18 @@ setTotal();
           </div>
          </div>
          <div class="submit">
-            <input type="submit" value="確定購物">
+            <button onclick="myFunction()">結帳</button>
+            <button onclick="my1Function()">刪除</button>
          </div>
         </article>
-
+        <script>
+            function myFunction() {
+              alert('確定要購買嗎??');
+            }
+            function my1Function() {
+              alert('確定要刪除嗎??');
+            }
+        </script>
    <footer>
     <h1>Copyright © 2019 one day lover Inc. All rights reserved</h1>
   </footer>
