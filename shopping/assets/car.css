@@ -32,12 +32,9 @@ table{
 }
 .submit{
   text-align: center;
-  padding: 30px;
+  padding: 10px;
 }
-.submit button{
+.submit input{
   width: 100px;
   height: 50px;
-  margin-left: 20px;
-  padding: 20px;
-  border-radius: 10px;
 }

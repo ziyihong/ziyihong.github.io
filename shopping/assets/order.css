@@ -1,0 +1,41 @@
+
+.hot.side
+{
+ width: 400px;
+ float: left;
+
+}
+.hot h1{
+    font-size: 35px;
+    text-align: center;
+    color: rgb(74, 126, 236);
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+.coupon {
+    border: 5px dotted rgb(255, 185, 218);
+    width: 40%;
+    border-radius: 15px;
+    max-width: 600px;
+    height: 300px;
+    float: left;
+    margin-left: 400px;
+    margin-top: -350px;
+  }
+  
+  .cont {
+    padding: 20px 16px 20px 50px;
+
+  }
+  .cont h2{
+    font-size: 30px;
+    font-family: 'Lilita One', cursive;
+
+}
+.cont p{
+    font-size: 20px;
+    font-family: 'Lilita One', cursive;
+
+}
+  
