@@ -5,10 +5,16 @@
     width: 100%;
     margin-bottom: 15px;
   }
-  
+  .hot h2{
+    font-size: 35px;
+    text-align: center;
+    color: rgb(236, 148, 195);
+    letter-spacing: 5px;
+    font-weight: bolder;
+  }
   .icon {
     padding: 10px;
-    background: dodgerblue;
+    background: rgb(255, 160, 226);
     color: white;
     min-width: 50px;
     text-align: center;
@@ -26,9 +32,10 @@
   
   /* Set a style for the submit button */
   .btn {
-    background-color: dodgerblue;
+    background-color: rgb(255, 160, 226);
     color: white;
     padding: 15px 20px;
+    margin-left: 10px;
     border: none;
     cursor: pointer;
     width: 100%;

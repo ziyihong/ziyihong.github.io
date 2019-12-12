@@ -5,7 +5,7 @@ nav{
 	width: 100%;
 	text-align: left;
 	padding: 20px;
-	background-color:rgb(240, 191, 227);
+	background-color:rgb(255, 195, 225);
 	font-size: 30px;
 	z-index: 1;
 }
@@ -32,7 +32,7 @@ input[type="submit"]
 	color: rgb(53, 73, 73);
 }
 		
-		input[type="text"]{padding:5px 15px; border:2px black solid;
+	nav	input[type="text"]{padding:5px 15px; 
 	cursor:pointer;
 	-webkit-border-radius: 5px;
 	border-radius: 5px; }
@@ -44,13 +44,13 @@ input[type="submit"]
 		right: 100px;
 	}
 body
-{
-	background-color: #fff;
+{	
 	font-family:Microsoft JhengHei;
 	color:black;
 }
 .container{
-    background-color: rgb(253, 221, 173) ;
+	background-image: url('../img/background.jpg');
+
 	padding: 20px;
 	padding-top:80px ;
 }
@@ -74,7 +74,7 @@ body
 
 }
 footer{
-    background-color: hotpink;
+    background-color: rgb(255, 195, 225);
 	padding: 20px;
 	text-align: center;
 	padding: 40px;
@@ -172,7 +172,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
 	margin: -10px;
 	padding: 10px 10px 10px 10px;
 	border: none;
-	background-color:rgb(240, 191, 227);
+	background-color:rgb(255, 195, 225);
 	width: 100%;
   
   }
@@ -192,7 +192,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
   .imgcontainer {
 	text-align: center;
 	position: relative;
-	background-color: rgb(250, 232, 209) ;
+	background-color: rgb(255, 255, 255) ;
   }
   
   img.avatar {
@@ -203,7 +203,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
    nav .container {
 	
    padding: 15px ;
-	background-color: rgb(250, 232, 209);
+	background-color: rgb(250, 209, 225);
   }
   nav .container b {
 	font-size: 25px;
@@ -211,7 +211,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
   
   }
   nav .container button  {
-	background-color: #ebce6f;
+	background-color: #ffddeb;
 	padding: 12px 20px;
 	margin: 8px 0;
   
