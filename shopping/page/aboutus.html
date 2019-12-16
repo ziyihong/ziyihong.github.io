@@ -12,7 +12,7 @@
 @import url("../assets/aboutus.css");
 </style>
 </head>
-<body translate="no" >
+<body translate="no">
     <nav>
         <ul class="drop-down-menu">
               <li><a href="everybody.html">特選情人</a>
@@ -44,12 +44,12 @@
               <form class="modal-content animate" action="/action_page.php" method="post">
                 <div class="imgcontainer">
                   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                  
+                  <img src="../img/member.png" alt="Avatar" class="avatar">
                 </div>
             
                 <div class="container">
-                  <label for="uname"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="uname" required>
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
             
                   <label for="psw"><b>Password</b></label>
                   <input type="password" placeholder="Enter Password" name="psw" required>
@@ -208,7 +208,8 @@
                 姓名<br><br><input type="text" placeholder="王大明"><br><br>
                 連絡電話<br><br><input type="text" placeholder="09-12345678"><br><br>
                 電子信箱<br><br><input type="text" placeholder="123@gmail.com"><br><br>
-                想說的話 <br><br><textarea name="想說的話" cols="30" rows="20"></textarea>
+                想說的話 <br><br><textarea name="想說的話" cols="30" rows="20"></textarea><br><br>
+                <input type="submit" name="送出" value="送出" style="padding: 10px; width: 60px;">
             </form>
       </div>
   </div>
