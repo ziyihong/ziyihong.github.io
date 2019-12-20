@@ -36,6 +36,7 @@ setTotal();
 <style>
  @import url("../assets/shopping.css");
  @import url("../assets/car.css");
+ @import url("../assets/plus.css");
 
 </style>
 </head>
@@ -114,45 +115,62 @@ setTotal();
 </nav>
 <article>
     <div class="container">
-        <p style="font-size: 40px; text-align: center;">購物車</p>
-          <div class="shopping">
-            <div class="item">
-               <ul id="Exa1">
-                <li> 
-                  <div>
-                    <input type="checkbox" style="width:20px;height:20px;">
-                </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="../img/g1.jpg" width="120px" height="150px">
+                    <div class="plus">
+                    <p style="font-size: 30px; font-weight: bold;">基本價:一天2000元</p>
+                    
+                    <br>
+                      加購項目:
+                        <table id="tab">
+                            <tr>
+                              <td>
+                                <span>開車接送 1km <span class="price">1000$
+                                  <input class="min" name="" type="button" value="-" />
+                                  <input class="text_box" name="" type="text" value="1" style="width:20px;height:20px;" />
+                                  <input class="add" name="" type="button" value="+" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span>送束花 幾隻玫瑰 <span class="price">50$
+                                  <input class="min" name="" type="button" value="-" />
+                                  <input class="text_box" name="" type="text" value="1"   style="width:20px;height:20px;"/>
+                                  <input class="add" name="" type="button" value="+" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span>自送禮物 多少錢 <span class="price">100$
+                                  <input class="min" name="" type="button" value="-" />
+                                    <input class="text_box" name="" type="text" value="1"   style="width:20px;height:20px;"/>
+                                    <input class="add" name="" type="button" value="+" />
+                                    </td>
+                                    </tr>
+                            </table>
+                            
+                            總價:<label id="total"></label>
+                            <br><br>
+                            <hr>
+                            <br><br>
+                            <div style="border: 10px solid rgb(252, 221, 244); border-style: dotted;">
+                                我們的存款帳號:123-45-678989-2<br><br>
+                                匯款帳號末四碼<br><br>
+                                <input type="text" style="font-size: 24px;">
+                                <h2 style="font-size: 12px;">(提供帳號讓我們確定你的匯款資料)</h2>
+                            </div>
+                            <br><br>
+                                
+                                
                     </div>
-                </li>
-                <li>
-                  <div class="text">
-                     <h1>一日約會對象:姍姍</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="text">
-                      備註<textarea name="" id="" cols="20" rows="10"></textarea>
-                  </div>
-                </li>
-                <li style="width: 100px;">
-                  一日:2000
-                </li>
-                </ul>   
-            </div>
-              
-          </div>
+
+                    
          </div>
          
+         
          <div class="submit">
-            
-         <a href="shop.html"><input type="submit" value="確定購物"></a>
-          <input type="submit" value="刪除">
-       </div>
+            <input type="submit" value="結帳">
+         </div>
         </article>
+
    <footer>
     <h1>Copyright © 2019 one day lover Inc. All rights reserved</h1>
   </footer>
