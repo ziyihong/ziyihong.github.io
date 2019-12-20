@@ -1,6 +1,8 @@
 .shopping{
     padding: 50px;
+    padding-left: 300px;
     background-color:azure ;
+
   }
   .item{
     clear: left;
@@ -26,10 +28,7 @@
   padding: 10px;
   padding-top: 20px;
 }
-table{
-  text-align: left;
-  line-height: 45px;
-}
+
 .submit{
   text-align: center;
   padding: 10px;
@@ -40,6 +39,5 @@ table{
 }
 .money{
     text-align: center;
-    padding: 20px;
     color:rgba(54, 98, 179, 0.89) ;
 }
