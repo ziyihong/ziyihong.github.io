@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
-<title>購物車</title>
+<title>結帳</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.3/jquery.mmenu.all.css'>
 <script type="text/javascript" src="../assets/shopping.js"></script>
@@ -63,6 +63,7 @@ setTotal();
     <div class="logo">
         <a href="../index.html"><img src="../img/logo.png" alt="logo" width="200px" height="80px"></a>
     </div>
+   
     <div class="b"> <a href="memberlogin.html"><img src="../img/member.png" alt="member" width="30px" height="30px"></a></div>
     <div class="b"><button onclick="document.getElementById('id01').style.display='block'" style="width:50px;" ><img src="../img/member.png" alt="member" width="30px" height="30px"></a></button>
 
@@ -114,9 +115,7 @@ setTotal();
 </nav>
 <article>
     <div class="container">
-      
                     <div class="plus">
-                      <br>
                     <p style="font-size: 30px; font-weight: bold;">基本價:一天2000元</p>
                     
                     <br>
@@ -150,16 +149,13 @@ setTotal();
                             
                             總價:<label id="total"></label>
                             <br><br>
-                              備註<br><textarea name="" id="" cols="20" rows="10"></textarea>
-                              <h2 style="font-size: 18px;">(有什麼需求可以留言給我們喔!)</h2>
-                          <br><br>
                             <hr>
                             <br><br>
                             <div style="border: 10px solid rgb(252, 221, 244); border-style: dotted;">
                                 我們的存款帳號:123-45-678989-2<br><br>
                                 匯款帳號末四碼<br><br>
-                                <input type="text" style="font-size: 24px;" >
-                                <h2 style="font-size: 18px;">(提供帳號讓我們確定你的匯款資料)</h2>
+                                <input type="text" style="font-size: 24px;">
+                                <h2 style="font-size: 12px;">(提供帳號讓我們確定你的匯款資料)</h2>
                             </div>
                             <br><br>
                                 
@@ -171,7 +167,7 @@ setTotal();
          
          
          <div class="submit">
-            <input type="submit" value="結帳" onClick="alert('確定好總價和匯款號碼，要結帳了喔!')">
+            <input type="submit" value="結帳">
          </div>
         </article>
 
