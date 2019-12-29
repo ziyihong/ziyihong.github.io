@@ -1,4 +1,20 @@
-
+form button
+{
+    float: left;
+    margin-left: 500px;
+    margin-top: -100px;
+}
 body{
-    background-color:rgb(255, 217, 223) ;
+    background-color:rgb(255, 202, 211) ;
+}
+ul li{
+    float:left;
+    padding-left: 20px;
+}
+ul{
+    list-style: none;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    width:5000px;
 }
