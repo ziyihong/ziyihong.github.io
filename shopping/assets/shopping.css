@@ -79,6 +79,8 @@ footer{
 	padding: 20px;
 	text-align: center;
 	padding: 40px;
+	position:absolute;
+	width: 100%;
 }
 .header,
 .content,
