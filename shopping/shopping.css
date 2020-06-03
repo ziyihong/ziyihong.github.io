@@ -79,7 +79,7 @@ footer{
 	padding: 20px;
 	text-align: center;
 	padding: 40px;
-	position:absolute;
+	position: relative;
 	width: 100%;
 }
 .header,
