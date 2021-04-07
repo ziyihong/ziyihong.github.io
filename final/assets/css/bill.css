@@ -1,0 +1,158 @@
+.totaltitle
+{
+	width: 81.9%;
+	font-size: 30px;
+	font-family: "tpe";	
+    border-top: 5px solid #FEE5B9;	
+	background-color: #FFF7E7;
+	margin: 50px 0 50px 9%;
+	padding: 10px 20px;
+	border-radius: 15px;
+}
+.totalarea
+{
+	margin-left: 9%;
+	margin-bottom: 10px;
+	width: 81.9%;
+	font-size: 25px;
+	font-family: "微軟正黑體";
+	padding:15px;
+	border: 2px solid #ddd;
+	border-radius: 15px;
+}
+
+.td1{
+	font-size: 30px;
+	font-weight: bold;
+	border-right: 2px solid white;
+	border-radius: 5px;
+}
+.totalarea table{
+	text-align: center;
+}
+.totalarea table td{
+	padding: 5px 10px;
+}
+.pay{
+	width: 81.9%;
+	margin-left: 9%;
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	background-color: #87919E;
+	text-align: center;
+	vertical-align: middle;
+	font-family: "微軟正黑體";
+	border-radius: 15px 15px 0 0 ;
+}
+.pay span{
+	margin: 0px 50px;
+}
+.info{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	width: 81.9%;
+	margin-left: 9%;
+}
+.info_title{
+	width: 3%;
+	font-size: 20px;
+	background-color: #87919E;
+	color: white;
+	font-family: "微軟正黑體";
+	padding: 10px 5px;
+	text-align: center;
+}
+.info_container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background-color: #CDE6F5;
+}
+.user_info{
+	display: flex;
+	height: 66px;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 20px;
+	font-family: "微軟正黑體";
+}
+.info_inside{
+	margin: 0 30px;	
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.user_info span{
+	padding: 0 10px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.address_input{
+	display: flex;
+	height: 66px;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 20px;
+	font-family: "微軟正黑體";
+}
+.address_input span{
+	padding: 0 10px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.address_input input{
+	width: 40%;
+}
+.info select{
+	height: 26px;
+	margin-right: 5px;
+}
+.card{	
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	width: 81.9%;
+	margin-left: 9%;
+	margin-bottom: 20px;
+	visibility: hidden;
+	border-radius: 0px 0px 15px;
+}
+.card_number{
+	height: 52px;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+}
+.card_number span{
+	padding: 0 13px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.card_inside{
+	margin: 0 10px;	
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: "微軟正黑體";
+}
+.btn_area{
+	text-align: center;
+}
+.table_title{
+	background-color: #ffe8e8;
+}
+.btn{
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px 10px;
+	background-color: black;
+	margin: 10px;
+}

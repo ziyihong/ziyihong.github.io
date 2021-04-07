@@ -1,0 +1,174 @@
+.shopcartitle{
+	border: solid 3px black; 
+	margin: 50px 140px 10px 140px;
+	font-size: 40px;
+	font-family: "tpe";
+	padding: 5px 10px;
+	color:white;
+	background-color: black;
+	border-radius: 15px;
+}
+.stit1{
+margin-left: 120px;
+}
+.stit2{
+margin-left: 280px;
+}
+.stit2_2{
+margin-left: 420px;
+}
+.stit3{
+margin-left: 270px;
+}
+.stit3_2{
+margin-left: 250px;
+}
+.stit4{
+margin-left: 175px;	
+}
+.stit4_2{
+margin-left: 65px;	
+}
+.stit5{
+margin-left: 140px;		
+}
+.stit5_2{
+margin-left:120px;	
+}
+.stit6
+{
+	margin-left:80px;
+}
+.shopcaritem{
+
+	margin: 50px 100px;
+	
+	font-family: "tpe";
+	padding: 10px;
+	margin: 20px;
+			display: flex;
+	align-items: flex-start; 
+
+}
+.shopcaritem2{
+    height: 250px;
+	margin: 50px 100px;
+	font-family: "tpe";
+	padding: 10px;
+	margin: 20px;
+	display: flex;
+	align-items: flex-start; 
+
+}
+.outside{
+	border: solid 3px black; 
+	margin: 20px 140px 30px 140px;
+	border-radius: 15px;
+
+}
+.shopcaritem img{
+	width: 300px;
+	height: 300px;
+	border: solid 3px black;
+
+}
+.iteminfro
+{
+   font-size: 20px;
+   font-family: "微軟正黑體";
+   font-weight: bold;
+   width: 400px;
+   height: 300px;
+   padding-top:100px;
+   margin-left: 50px;
+
+
+}
+.iteminfro2
+{  color: red;
+   font-size: 35px;
+   font-family: "微軟正黑體";
+   font-weight: bold;
+   width: 200px;
+   height: 300px;
+   padding-top:100px;
+   margin-left: 50px;
+
+
+}
+.iteminfro3
+{  
+   font-size: 30px;
+   font-family: "微軟正黑體";
+   font-weight: bold;
+   width: 200px;
+   height: 300px;
+   padding-top:100px;
+   margin-left: 50px;
+}
+.iteminfro4
+{  
+   font-size: 30px;
+   font-family: "微軟正黑體";
+   font-weight: bold;
+   height: 300px;
+   padding-top:100px;
+}
+.iteminfro5
+{  
+   font-size: 30px;
+   font-family: "微軟正黑體";
+   font-weight: bold;
+   height: 300px;
+   padding-top:100px;
+   margin-right: 50px;
+   margin-left: 50px;
+}
+.iteminfro6
+{  
+   font-size: 30px;
+   font-family: "微軟正黑體";
+   font-weight: bold;
+   height: 300px;
+   padding-top:100px;
+   margin-right: 50px;
+   margin-left: 50px;
+   color: red;
+}
+.num-min{
+    width: 48px;
+    height:48px;
+	font-size: 30px;
+	background-color: black;
+	color: white;
+
+}
+.num-plus{
+       width: 48px;
+    height:48px;
+    background-color: black;
+	color: white;
+}
+.bt{
+	font-size: 50px;
+	background-color: red;
+	color: white;
+	font-family: "tpe";
+	padding: 5px 10px;
+	border-radius: 10px;
+	border:none;
+	margin-left: 1545px;
+	margin-bottom: 50px;
+}
+.bt2{
+	width: 52px;
+	height: 52px;
+	font-size: 30px;
+	background-color: black;
+	color: white;
+	font-family: "tpe";
+	padding: 5px 10px;
+	border-radius: 10px;
+	border:none;
+
+}

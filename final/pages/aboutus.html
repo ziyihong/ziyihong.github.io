@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			@import url("../assets/css/fixed.css");
+			@import url("../assets/css/aboutus.css");
+			@import url("../assets/css/searchbox.css");
+		</style>
+		<script>
+		function openNav() {
+		document.getElementById("sidebar").style.width = "250px";
+		}
+		function closeNav() {
+		document.getElementById("sidebar").style.width = "0";
+		}
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class = "solid_header">
+				<a href="../index.jsp"><img src = "../assets/images/logo.png" alt = "logo" class="logo"></a>
+				<img src = "../assets/images/slogan.png" alt = "member" class="sloganpic">
+				<div class = "member">
+					<a href="../pages/member.jsp"><img src = "../assets/images/member.png" alt = "member" class="memberpic"></a>
+					<a href="../pages/shopcar.jsp"><img src = "../assets/images/shopcar.png" alt = "member" class="carpic"></a>
+				</div>				
+			</div>
+			<div class = "header" id = "header">
+				<img src = "../assets/images/menu.png" alt = "menu" onclick="openNav()" style="cursor: pointer;">
+				<div id = "sidebar" class = "sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<img src = "../assets/images/logo1.png" class="listlogo">
+					<a href="" class="list1">msi&nbsp;RX5700</a>
+					<a href="" class="list1">msi&nbsp;RTX2080&nbsp;super</a>
+					<a href="" class="list2">asus&nbsp;GTX1660&nbsp;super</a>
+					<a href="" class="list2">asus&nbsp;RTX2080&nbsp;TI</a>
+					<a href="" class="list3">GIGA&nbsp;RX5700&nbsp;XT</a>
+					<a href="" class="list3">GIGA&nbsp;RTX2060&nbsp;super</a>
+				</div>
+				<div class="right">
+					<div class="webdesigntuts-workshop">
+						<form action="search_app.jsp">
+							<input type="text" name="search" placeholder="Search...">
+							<button>Search</button>
+						</form>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="../pages/product.jsp">商品總覽</a></li>
+							<li><a href="../pages/shopcar.jsp">購物車</a></li>
+							<li><a href="../pages/aboutus.html">關於我們</a></li>
+							<li><a href="../index.jsp">回首頁</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<!--content-->
+		<div class = "main-content" id="main">
+			<div class = "outer">
+				<div class = "block">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="../assets/images/peng.jpg" >
+								<div class = "right_content">
+									<div class = "name"><span>彭柏豪</span><img src="../assets/images/logo2.png" alt=""></div>
+									<hr class = "inside_hr">
+									<p>前端設計</p>
+									<p>興趣:打LOL</p>
+									<p>專長:打LOL</p>
+								</div>
+							</div>
+							<div class="back">
+								<p>自從學習到了CSS以後才知道，原來每個網站的排版都是由密密麻麻的程式所交織而成，每個設定都會牽動到整個網頁，在設計此購物網站時
+								，讓我更加熟悉CSS及HTML的語法，並且強化了他的邏輯</p>
+								<div class = "link">
+									<a href = "https://www.facebook.com/profile.php?id=100002165091037"><img src="../assets/images/fb.png" alt=""></a>
+									<a href = "https://www.instagram.com/peng_890211/?hl=zh-t"><img src="../assets/images/ig.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="../assets/images/harry.jpg" >
+								<div class = "right_content">
+									<div class = "name"><span>黃湧崴</span><img src="../assets/images/logo2.png" alt=""></div>
+									<hr class = "inside_hr">
+									<p>前端設計</p>
+									<p>興趣:打APEX</p>
+									<p>專長:不太會打APEX</p>
+								</div>
+							</div>
+							<div class="back">
+								<p>修了這學期的多媒體之後，才發現網頁上每個元素都是一層一層的包裝起來，好放在正確的位子上，雖然聽聞業界的工程師大多使用框架來編輯網頁，但還是新手的我們一步一步架設起簡陋的網站，成就感也是無與倫比</p>
+								<div class = "link">
+									<a href = "https://www.facebook.com/profile.php?id=100000595838715"><img src="../assets/images/fb.png" alt=""></a>
+									<a href = "https://www.instagram.com/hr98719"><img src="../assets/images/ig.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "block">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front girl">
+								<img src="../assets/images/hon.jpg">
+								<div class = "right_content">
+									<div class = "name"><span>洪子貽</span><img src="../assets/images/logo2.png" alt=""></div>
+									<hr class = "inside_hr">
+									<p>前端設計</p>
+									<p>興趣:看電影</p>
+									<p>專長:畫畫</p>
+								</div>
+							</div>
+							<div class="back">
+								<p>這次期末的專題，是有關於前後端的合作，由乙班做前端我們做後端，因為有上學期的學習，我相信我們的合作會更好，因為大家都互相知道對方要怎麼做比較不會像上學期一樣混亂，希望我們這次的作品可以更好</p>
+								<div class = "link">
+									<a href = "https://m.facebook.com/ziyi.hong.3?ref=bookmarks"><img src="../assets/images/fb.png" alt=""></a>
+									<a href = "https://www.instagram.com/?hl=zh-tw"><img src="../assets/images/ig.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front girl">
+								<img src="../assets/images/wang.jpg" >
+								<div class = "right_content">
+									<div class = "name"><span>王怡涵</span><img src="../assets/images/logo2.png" alt=""></div>
+									<hr class = "inside_hr">
+									<p>後端技術</p>
+									<p>興趣:打羽球</p>
+									<p>專長:吃東西</p>
+								</div>
+							</div>
+							<div class="back">
+								<p>經歷上學期的前端，這學期換我們要做後端了，很幸運的我們這組的組員不會拖拖拉拉的，總是可以在期限內把東西做出來，也很開心經過這次的專案，對後段了解了許多</p>
+								<div class = "link">
+									<a href = "https://www.facebook.com/profile.php?id=100001103338991"><img src="../assets/images/fb.png" alt=""></a>
+									<a href = "https://www.instagram.com/smile._09/"><img src="../assets/images/ig.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--content end-->
+		<footer>
+			<div class = "footer_top">
+				<ul>
+					<li><a class="bigt" style="text-decoration: none;">商品總覽</a>
+					<hr class = "hr">
+					<ul class = "footer_list">
+						<li><a href = "../pages/product.html#asus">AUSU</a></li>
+						<li><a href = "../pages/product.html#msi">MSI</a></li>
+						<li><a href = "../pages/product.html#gigabyte">GIGABYTE</a></li>
+					</ul>
+				</li>
+				<li><a class="bigt" style="text-decoration: none;">會員資訊</a>
+				<hr class = "hr">
+				<ul class = "footer_list">
+					<li><a href = "register.jsp">註冊會員</a></li>
+					<li><a href = "modifyacc.jsp">修改會員資料</a></li>
+					<li><a href = "record.jsp">購買紀錄</a></li>
+					<li><a href = "shopcar.jsp">購物車</a></li>
+					<li><a href = "needcommentitem.jsp">待評分項目</a></li>
+				</ul>
+			</li>
+			<li><a class="bigt" style="text-decoration: none;">關於我們</a>
+			<hr class = "hr">
+			<ul class = "footer_list">
+				<li><a href = "aboutus.html">聯絡我們</a></li>
+				
+			</ul>
+		</li>
+		
+	</ul>
+	<img src = "../assets/images/logo1.png" alt = "logo">
+</div>
+<hr class="hr2">
+<div class = "copyright">
+	© 2020 Belief of GPU 保留所有權利
+</div>
+</footer>
+<script>
+		window.onscroll = function() {myFunction()};
+		var header = document.getElementById("header");
+		var sticky = header.offsetTop;
+		function myFunction() {
+		if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+		} else {
+		header.classList.remove("sticky");
+		}
+		}
+	
+</script>
+</body>
+</html>

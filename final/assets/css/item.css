@@ -1,0 +1,130 @@
+.main-content{
+	background-color: black;
+	padding-bottom: 1000px;
+}
+.sellarea{
+	width: 1662px;
+	padding-top:60px;
+	padding-left: 300px;
+	display: flex;
+	align-items: flex-start;
+}
+.sellpic img{
+	width: 470px;
+	height: 470px;
+	border:solid 3px red;
+}
+.sellword{
+	margin:5px 50px;
+	font-size: 30px;
+	color: white;
+	font-family: "微軟正黑體";
+	font-weight: bold;
+	width: 742px;
+
+}
+.sellword .aaa{
+	padding-left: 40px;
+	line-height: 50px;
+}
+.sellword .bbb{
+	padding-left: 17px;
+}
+.price{
+	text-shadow: 2px 2px 5px #8E8E8E;
+	background-color: 	#D0D0D0;
+	font-size: 40px;
+	font-family: "微軟正黑體";
+	font-weight: bolder;
+	margin: 20px 20px;
+	padding: 10px 20px;
+	border-radius: 15px;
+	color: #EA0000;
+}
+select{
+	color: black;
+    width: 60px;
+	font-size: 30px;
+
+}
+.bt
+{ 
+background-color:#5F4BB6;
+border: 3px #5F4BB6 solid; /* 去掉邊框 */
+color: white; 
+font-weight: bold;
+font-family: '微軟正黑體';/* 字改成白色 */
+font-size: 30px; /* 改字體大小 */
+padding: 3px 8px; /* 按鈕內邊距離 */
+
+ /* 按鈕寬度 */
+
+border-radius: 5px; /* 圓角5px */ 
+margin-left: 30px;
+}
+.bt.bt2{
+background-color:white;
+border: 3px solid white; /* 去掉邊框 */
+color: #5F4BB6; 
+font-weight: bold;
+font-family: 'tpe';/* 字改成白色 */
+font-size: 30px; /* 改字體大小 */
+padding: 3px 8px; /* 按鈕內邊距離 */
+
+ /* 按鈕寬度 */
+border-radius: 5px; /* 圓角5px */ 
+margin-left: 10px;
+
+
+}
+.ccc{
+	display: flex;
+	align-items: flex-start;
+}
+.ad{
+	text-align: center;
+
+}
+.ad img{
+	width: 1400px;
+}
+.uname{
+	font-size: 20px;
+	font-family: "微軟正黑體";
+	color: white;
+}
+.rarea{
+	background-color:rgba(255,255,255,0.2);
+	display: flex;
+	flex-direction: column;
+    margin: 0px 250px;
+    padding: 20px 20px;
+	
+}
+.ratinghr{
+	border:none;
+	height: 3px;
+	background-color: white;
+	width: 100%;
+	margin: 0px 0px 10px 0px;
+}
+.rating {
+    float:left;
+}
+.rcontent{
+	color: white;
+	font-size: 20px;
+	font-family: "微軟正黑體";
+}
+.fback{
+	margin: 20px 0px;
+}
+
+.checked {
+  color: orange;
+}
+
+.unchecked
+{
+	color:white;
+}

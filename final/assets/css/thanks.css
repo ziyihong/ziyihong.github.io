@@ -1,0 +1,68 @@
+.thk
+{
+	font-size: 100px;
+	font-family: "tpe";
+	text-align: center;
+	background-color: black;
+	color: red;
+	padding: 200px 0px;
+}
+
+.bt.bt2{
+background-color:#009900;
+border: 4px solid #009900; /* 去掉邊框 */
+color: black; 
+font-weight: bold;
+font-family: 'tpe';/* 字改成白色 */
+font-size: 50px; /* 改字體大小 */
+padding: 5px 10px; /* 按鈕內邊距離 */
+
+ /* 按鈕寬度 */
+border-radius: 5px; /* 圓角5px */ 
+height: 100px;
+width:350px;
+margin-top: 60px;
+
+}
+.bt{
+	background-color:#009900;
+border: 4px solid #009900; /* 去掉邊框 */
+color: black; 
+font-weight: bold;
+font-family: 'tpe';/* 字改成白色 */
+font-size: 50px; /* 改字體大小 */
+padding: 5px 10px; /* 按鈕內邊距離 */
+
+ /* 按鈕寬度 */
+border-radius: 5px; /* 圓角5px */ 
+height: 100px;
+width:350px;
+
+
+}
+
+.bt span
+{
+transition: 0.5s; /* 過渡0.5秒 */
+text-shadow: 0 1px 1px rgba(0,0,0,.4),0 1px 2px rgba(0,0,0,.2);
+
+}
+.bt.bt2:hover
+{
+	background-color: #00D600;
+}
+
+.bt:hover span
+{
+padding-right: 10px; 
+/* 當鼠標在按鈕上時span內邊右距離25px */
+}
+.bt span:after{ 
+	content: " »"; /* span後面追加內容為» */
+opacity: 0; /* 透明度為0 */
+transition: 0.5s; /* 加個0.5秒的過渡 */
+}
+.bt:hover span:after
+{
+opacity: 1; /* 透明度為1，就是顯示 */
+}

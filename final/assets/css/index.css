@@ -1,0 +1,117 @@
+.s1{
+	width: 100%;
+
+}
+.container{
+	width: 100%;
+	padding: 0px;
+}
+
+.carousel-inner img{
+	max-height:842px;
+}
+.bigarea{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.bigarea img{
+	width: 80%;
+
+}
+.no1 button{
+	margin-top:10px;
+	margin-left: 180px;
+}
+
+.in{
+	width: 450px;
+	float: left;
+	text-decoration: underline;
+}
+.image{
+	text-align: center;
+}
+.hot{
+	font-family: "微軟正黑體";
+	font-weight: bold;
+	font-size: 60px;
+	margin-left: 70px;
+	margin-top: 20px;
+	margin-bottom: 1px;
+}
+
+.no1{
+	padding: 20px 20px 50px 20px;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	font-size: 25px;
+}
+.bt
+{ 
+background-color:#CE0000;
+border: 3px #CE0000 solid; /* 去掉邊框 */
+color: white; 
+font-weight: bold;
+font-family: '微軟正黑體';/* 字改成白色 */
+font-size: 30px; /* 改字體大小 */
+padding: 5px 10px; /* 按鈕內邊距離 */
+
+ /* 按鈕寬度 */
+
+border-radius: 5px; /* 圓角5px */ 
+}
+.bt.bt2{
+background-color:#009900;
+border: 4px solid #009900; /* 去掉邊框 */
+color: black; 
+font-weight: bold;
+font-family: 'tpe';/* 字改成白色 */
+font-size: 50px; /* 改字體大小 */
+padding: 5px 10px; /* 按鈕內邊距離 */
+
+ /* 按鈕寬度 */
+border-radius: 5px; /* 圓角5px */ 
+height: 100px;
+width:350px;
+margin-top: 120px;
+margin-left:160px;
+}
+
+.bt span
+{
+transition: 0.5s; /* 過渡0.5秒 */
+text-shadow: 0 1px 1px rgba(0,0,0,.4),0 1px 2px rgba(0,0,0,.2);
+
+}
+.bt.bt2:hover
+{
+	background-color: #00D600;
+}
+
+.bt:hover span
+{
+padding-right: 10px; 
+/* 當鼠標在按鈕上時span內邊右距離25px */
+}
+.bt span:after{ 
+	content: " »"; /* span後面追加內容為» */
+opacity: 0; /* 透明度為0 */
+transition: 0.5s; /* 加個0.5秒的過渡 */
+}
+.bt:hover span:after
+{
+opacity: 1; /* 透明度為1，就是顯示 */
+}
+.lastdiv{
+	color: white;
+	text-align: left;
+	font-size: 80px;
+	padding-top: 100px;
+	padding-left: 60px;
+	background-image: url("assets/images/enter.jpg");
+	height: 600px;
+	font-family: 'tpe';
+}

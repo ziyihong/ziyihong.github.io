@@ -1,0 +1,19 @@
+.line{
+	width: 100%;
+    border:none;
+
+background-color:#D0D0D0;
+
+height:3px;
+}
+.title{
+	
+	font-size: 60px;
+	padding: 30px 200px 0px 200px;	
+	font-family: "tpe";
+	color: #CE0000;
+	text-align: center;
+}
+.main-content{
+	padding-bottom:350px;
+}

@@ -1,0 +1,118 @@
+.table
+{   
+	padding-top: 30px;	
+	font-family: "tpe";
+	font-size: 30px;
+	color: #CE0000;
+	justify-content: center;
+	margin: 0;
+}
+.table2{
+	display: flex;
+	align-items: flex-start;
+	font-family: "微軟正黑體";
+	font-weight: bold;
+	color: black;
+	width: 100%;
+    margin-top: 20px;
+    font-size: 25px;
+    border:3px solid black;
+
+}
+.table2:hover{
+border:3px solid #AE0000;
+
+}
+.form_title:hover{
+	background-color: #AE0000;
+	border:3px solid #AE0000;
+}
+.enter{
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 40px;
+}
+.join{
+	font-size: 25px;
+	margin-left: 232px;
+	margin-right: 20px;
+	margin-top: 47px;
+	font-family: "微軟正黑體";
+	font-weight: bold;
+	text-decoration: none;
+}
+.join:hover{
+	text-decoration: none;
+}
+.table input{
+	background-color:#F0F0F0;
+	border: 3px solid black; 
+	padding: 5px;
+	width: 100%;
+}
+.table input:focus{
+	border: 3px solid #CE0000; 
+	box-shadow: 5px 3px 5px #888888;
+}
+.bt
+{ 
+margin: 0px 20px;
+background-color:#CE0000;
+border: 3px white #CE0000; /* 去掉邊框 */
+color: white; 
+font-weight: bold;
+font-family: 'tpe';/* 字改成白色 */
+font-size: 25px; /* 改字體大小 */
+padding: 5px 10px; /* 按鈕內邊距離 */
+
+ /* 按鈕寬度 */
+
+border-radius: 6px; /* 圓角5px */ 
+}
+.bt span
+{
+transition: 0.5s; /* 過渡0.5秒 */
+text-shadow: 0 1px 1px rgba(0,0,0,.4),0 1px 2px rgba(0,0,0,.2);
+
+}
+
+.row{
+	display: flex;	
+	flex-direction: row;
+
+}
+.column{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.line{
+	width: 100%;
+    border:none;
+
+background-color:#D0D0D0;
+
+height:3px;
+}
+.form_title{
+	width: 30%;
+	height: 100%;
+	padding: 5px ;
+	text-align: center;
+	border:3px solid black;
+	background-color:black;
+	color: white;
+}
+
+.form{
+	width: 70%;
+	align-items: center;
+}
+.inputbox{
+	width: 80%;
+}
+.title{
+	text-align: left;
+	width: 100%;
+	font-size: 40px;
+}

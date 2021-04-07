@@ -1,0 +1,110 @@
+/* entire container, keeps perspective */
+.flip-container {
+perspective: 1000;
+margin: 20px;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+transform: rotateY(180deg);
+}
+.flip-container, .front, .back {
+width: 600px;
+height: 300px;
+display:inline-block;
+border-radius: 15px;
+}
+.flipper img{
+	width: 50%;
+	height: 100%;
+	padding: 10px;
+	border-radius: 15px;
+
+}
+/* flip speed goes here */
+.flipper {
+transition: 0.6s;
+transform-style: preserve-3d;
+position: relative;
+}
+/* hide back of pane during swap */
+.front, .back {
+backface-visibility: hidden;
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+flex-direction: row;
+}
+/* front pane, placed above back */
+.front {
+z-index: 2;
+border: 2px solid black;
+background-color: #fffff0;
+}
+.front.girl{
+z-index: 2;
+border: 2px solid black;
+background-color: #FFD9EC;
+}
+/* back, initially hidden pane */
+.back {
+transform: rotateY(180deg);
+border: 2px solid black;
+padding: 15px;
+font-family: "setofont";
+font-size: 30px;
+font-weight: bold;
+}
+/* Style the header with a grey background and some padding */
+.outer{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.inside_hr{
+	border: 1px solid black;
+	width: 105px;
+	margin-right: 190px;
+}
+.right_content{
+	width: 100%;
+}
+.name{
+	margin-top: 10px;
+	font-size: 35px;
+	font-family: "tpe";
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;	
+}
+.name img{
+	width: 100px;
+	height: 100px;
+	
+}
+.right_content p{
+	font-size: 20px;
+	font-family: "tpe";
+}
+.block{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.link{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.link img{
+	width: 60px;
+	height: 60px;
+}
