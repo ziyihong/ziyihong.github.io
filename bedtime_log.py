@@ -2,7 +2,7 @@ from linebot import LineBotApi
 from linebot.models import *
 import requests
 # 必須放上自己的Channel Access Token(在Line Developers的Messaging API裡)
-line_bot_api = LineBotApi('85mQXt4htM3J/LNJ9VZE8K9GjpuM4PYQQRSlkSaGixvmTLMMZ1mMHeffikAuTk/cvqt3jUbusz8Pxq9RgRolmzYXaRE+gx2SYBLIrJ0DiZyggjv5OQklrCVFNrDxF+MZ18WYKypWd7s8E5jmz9t8fwdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('MojkGXeag3xXX/lf3saxP/Afl3vUVkakM9yURbhc+peIKdCNt4r2O4CSmXH1qA3SOhOGvfhKW/i99OXJCfwsbOkijoi1QWqyECNEn/TPOLNYtSCtasHb9CURY70Y8WhVCIX3iHMhloEjycZsUVHVdQdB04t89/1O/w1cDnyilFU=')
 
 def sendQuicklyReply(event):#Quick Reply Message
     try:
